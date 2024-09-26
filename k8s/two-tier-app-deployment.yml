@@ -20,7 +20,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: MYSQL_HOST
-              value: "10.100.44.79"
+              value: "10.100.24.128"
             - name: MYSQL_USER
               value: "root"
             - name: MYSQL_PASSWORD
