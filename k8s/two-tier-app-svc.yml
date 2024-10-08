@@ -7,10 +7,9 @@ metadata:
   namespace: app
 spec:
   ports:
-    - nodePort: 30006
+    - protocol: TCP
       port: 80
-      protocol: TCP
       targetPort: 5000
   selector:
     app: two-tier-app
-  type: NodePort
+  type: ClusterIP
