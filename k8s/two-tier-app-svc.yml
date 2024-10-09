@@ -13,4 +13,4 @@ spec:
       nodePort: 30006
   selector:
     app: two-tier-app
-  type: NodePort
+  type: ClusterIP
