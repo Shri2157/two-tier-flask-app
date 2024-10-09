@@ -36,7 +36,11 @@ def hello():
     messages = cur.fetchall()
     cur.close()
     return render_template('index.html', messages=messages)
-
+# Optional: handle favicon.ico request
+@app.route('/favicon.ico')
+def favicon():
+    return '', 204
+    
 @app.route('/submit', methods=['POST'])
 def submit():
     new_message = request.form.get('new_message')
