@@ -10,6 +10,7 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 5000
+      nodeport: 30006
   selector:
     app: two-tier-app
-  type: ClusterIP
+  type: NodePort
